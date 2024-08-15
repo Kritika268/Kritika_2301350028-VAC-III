@@ -1,0 +1,256 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+}
+/*header section*/
+
+header{
+  height:80px;
+  background-color: #ffffff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b6b1b1;
+  padding-bottom: 6px;
+}
+.myntra_home{
+  margin:0;
+  padding:0;
+  height:45px;
+  width:55px;
+}
+.logo_container{
+  margin-left: 3%;
+}
+.action_bar{
+  margin-right: 3%;
+}
+.nav_bar{
+  display:flex;
+  min-width:500px;
+  justify-content: space-evenly;}
+
+.nav_bar a{
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #282c3f;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding:28px 0;
+  border-bottom: 5px solid rgb(243, 241, 242);
+  
+
+} 
+.nav_bar a:hover{
+  border-bottom: 4px solid hotpink;
+  
+}
+.nav_bar a sup{
+  color: #ff3f6c;
+  font-size: 10px;
+
+}   
+.search_bar{
+  height: 40px;
+  min-width: 200;
+  width: 30%;
+  display:flex;
+  align-items: center;
+
+}
+.search_icon{
+  box-sizing: content-box;
+  height: 20px;
+  padding: 10px;
+  background-color: #f5f5f6;
+  color: #282c3f;
+  font-weight: 300;
+  border-radius: 4px 0 0 4px;
+
+
+}
+.search_input{
+  color:grey;
+  background-color: beige;
+  flex-grow: 1;
+  height: 40px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+ 
+}
+.action_bar{
+  display: flex;
+  min-width: 200px;
+  justify-content:space-evenly;
+}
+.action_container{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.bag-items-container {
+  display: inline-block;
+  width: 64%;
+  padding-right: 20px;
+  border-right: 1px solid #eaeaec;
+  padding-top: 32px;
+  color: #282c3f;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+.bag-page {
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.bag-summary {
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  padding: 24px 0 0 16px;
+  color: #282c3f;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+.bag-details-container {
+  margin-bottom: 16px;
+}
+
+.price-header {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 24px 0 16px;
+  color: #535766;
+}
+
+.price-item {
+  margin-bottom: 12px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #282c3f;
+}
+
+.price-item-value {
+  float: right;
+}
+
+.priceDetail-base-discount {
+  color: #03a685;
+}
+
+.price-footer {
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 16px;
+  border-top: 1px solid #eaeaec;
+  color: #3e4152;
+  line-height: 16px;
+}
+
+.btn-place-order {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  border-width: 0px;
+  padding: 10px 16px;
+  background-color: rgb(255, 63, 108);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.bag-item-container {
+  margin-bottom: 8px;
+  background: #fff;
+  font-size: 14px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  position: relative;
+  padding: 12px 12px 0;
+}
+
+.item-left-part {
+  position: absolute;
+  background: rgb(255, 242, 223);
+  height: 148px;
+  width: 111px;
+}
+
+.item-right-part {
+  padding-left: 12px;
+  position: relative;
+  min-height: 148px;
+  margin-left: 111px;
+  margin-bottom: 12px;
+}
+
+.bag-item-img {
+  width: 100%;
+}
+
+.return-period {
+  display: inline-flex;
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.return-period-days {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.delivery-details {
+  margin-top: 5px;
+  color: #282c3f;
+  font-size: 12px;
+  letter-spacing: -.1px;
+  margin-bottom: 8px;
+  line-height: 15px;
+}
+
+.delivery-details-days {
+  color: #03a685;
+}
+
+.remove-from-cart {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  right: 18px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.footer_container{
+  padding: 30px 0px 40px 0px;
+  background: #FAFBFC;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.footer_column h3{
+  color:#282c3f;
+  font-size:14px;
+  margin-bottom:25px;
+}
+.footer_column a{
+  color:#696b79;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding-bottom: 5px;
+
+
+}
+.copyright{
+  color:#94969f;
+  text-align: end;
+  padding:15px;
+}

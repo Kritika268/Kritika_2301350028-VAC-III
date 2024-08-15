@@ -1,0 +1,112 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f0f2f5;
+   background-image: url('./assets/image.jpg');
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: "Gill Sans Extrabold";
+  color: #3a3b4f;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #c6c6d0, #6291e9);
+
+}
+.container {
+  background-color: #dde7f1;
+  padding: 21px;
+  border-radius: 23px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  max-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.container div input {
+  width: 100%;
+  font-size: 2.2em;
+  padding: 15px;
+  text-align: right;
+  border: none;
+  border-radius: 13px;
+  color:black;
+  background-color: rgba(107, 121, 127, 0.85);
+  margin-bottom: 15px;
+}
+
+button {
+  width: 23%;
+  margin: 1%;
+  padding: 15px;
+  font-size: 2.5em;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:nth-child(4n) {
+  background-color: #397ca3;
+  color: #fff;
+}
+
+button:nth-child(4n):hover {
+  background-color: #0b161c;
+}
+
+button {
+  background-color: #5bfadf;
+}
+
+button:hover {
+  background-color: #d5d5d5;
+}
+
+button:nth-child(3) {
+  background-color: #6e7c8b;
+  color: #fff;
+}
+
+button:nth-child(3):hover {
+  background-color: #175291;
+}
+
+button:nth-child(2) {
+  background-color: #6e7c8b;
+  color: #fff;
+}
+
+button:nth-child(2):hover {
+  background-color:#175291;
+}
+
+button:nth-child(1) {
+  background-color: #967472;
+  color: #fff;
+}
+
+button:nth-child(1):hover {
+  background-color: #d32f2f;
+}
