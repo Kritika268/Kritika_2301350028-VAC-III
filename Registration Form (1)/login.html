@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="container">
-      <div class="image-section">
-        <img src="/image.png" alt="Background Image" />
-      </div>
-      <div class="form-section">
-        <h1>Login Form</h1>
-        <form id="loginForm">
-          <label for="email">Email id:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
-
-          <div class="buttons">
-            <button type="submit">Login</button>
-          </div>
-          <br />
-          <a href="/index.html">Register Instead</a>
-        </form>
-      </div>
+        <div class="image-section">
+            <img src="image.png" alt="Background Image">
+        </div>
+        <div class="form-section">
+            <h1>Login Form</h1>
+            <form id="loginForm">
+                <label for="email">Email id:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div class="buttons">
+                    <button type="submit">Login</button>
+                </div>
+                <br>
+                <!-- Register link that opens in a new frame (tab) -->
+                <a href="index.html" target="_blank">Register Instead</a>
+            </form>
+        </div>
     </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = {
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+            };
 
-  </body>
+            fetch('http://localhost:3001/login', { // Ensure the correct port number
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert('Error: ' + data.error);
+                } else {
+                    alert('Login successful! Redirecting...');
+                    // Redirect to a dashboard or another page
+                    window.location.href = 'index.html';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
 </html>
