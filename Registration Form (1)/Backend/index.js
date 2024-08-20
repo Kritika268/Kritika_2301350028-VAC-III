@@ -30,12 +30,13 @@ app.post("/users", (req, res) => {
   );
 
   stmt.run([username, email, password], function (err) {
-    // store plain password directly
+
     if (err) {
       res.status(500).json({ error: err.message });
     } else {
       res.status(201).json({ userID: this.lastID });
     }
+    
   });
 
   stmt.finalize();
